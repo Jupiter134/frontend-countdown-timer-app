@@ -1,0 +1,138 @@
+/*import Roboto and Orbitro font/font family*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Orbitron&display=swap");
+
+/*style timer button*/
+.nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/*default margin*/
+.body
+{
+    margin: 0;
+}
+
+/*adds apple centred on page and centres block of buttons/timer*/
+.parent
+{
+    min-height: 100vh;
+    background-image: url("apple-pic-removebg-preview.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*set background colour to light blue*/
+.all
+{
+    background-color: lightblue;
+}
+
+/*used in js to hide buttons/timer until timer button is pressed*/
+.hidden
+{
+    display: none;
+}
+
+/*center text and text colour white for time display and buttons*/
+.container
+{
+    text-align: center;
+    color: white;
+}
+
+/*centers time display within parent block */
+.timer
+{
+    font-size: 24px;
+    padding: 15px 40px;
+    border-radius: 8px;
+    border:none;
+}
+
+.timer:hover
+{
+    border: 4px solid black;
+}
+
+/*centers buttons and aligns them in middle, flex vertical*/
+.buttons
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: vertical;
+}
+
+/*Roboto start, green background*/
+.start
+{
+    font-family: 'Roboto', sans-serif;
+    background: green;
+    color: white;
+}
+
+/*Roboto stop, red background*/
+.stop
+{
+    font-family: 'Roboto', sans-serif;
+    background: red;
+    color: white;
+}
+
+/*Roboto pause, orange background*/
+.pause
+{
+    font-family: 'Roboto', sans-serif;
+    background: orange;
+    color: white;
+}
+
+/*make time display bigger, text white, Orbitron font*/
+#timeDisplay
+{
+    font-size: 80px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*turn time display text yellow on hover*/
+#timeDisplay:hover
+{
+    color: yellow;
+}
+
+/*turn time display text red and add black background with 
+rounded corners, used in js when time is <= 15 seconds*/
+#timeDisplay.warning
+{
+    color: red;
+    background: black;
+    border-radius: 5px;
+}
+
+/*add black border to each button on hover*/
+.start:hover
+{
+    border: 4px solid black;
+}
+
+.pause:hover
+{
+    border: 4px solid black;
+}
+
+.stop:hover
+{
+    border: 4px solid black;
+}
